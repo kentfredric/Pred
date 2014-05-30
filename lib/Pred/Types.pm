@@ -5,7 +5,11 @@ use Scalar::Util qw(blessed looks_like_number);
 use Exporter;
 
 our @ISA = qw(Exporter);
-our @EXPORT_OK = qw(blessed identifier identifier_atom integer nil number pos_simple pos_string simple string);
+our @EXPORT_OK = qw(blessed coderef identifier identifier_atom integer nil number pos_simple pos_string simple string);
+
+sub coderef {
+  return unless ref($_[0]) eq 'CODE'; 1;
+}
 
 sub identifier_atom {
   return unless ($_[0] =~ /^(?:[a-zA-Z_]+[a-zA-Z0-9_]*)$/); 1;

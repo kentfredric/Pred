@@ -1,9 +1,15 @@
 use Test::Most;
 
-use Pred::Types qw(blessed identifier identifier_atom integer nil number pos_simple pos_string simple string);
+use Pred::Types qw(blessed coderef identifier identifier_atom integer nil number pos_simple pos_string simple string);
 
 # That it didn't error out in importing is enough of a test for blessed
 ok(1,"blessed");
+
+eq_or_diff(coderef(sub{}),1);
+eq_or_diff([coderef([])],[]);
+eq_or_diff(scalar coderef([]),undef);
+eq_or_diff([coderef("")],[]);
+eq_or_diff(scalar coderef(""),undef);
 
 eq_or_diff(scalar identifier("f"),1);
 eq_or_diff(scalar identifier("foo"),1);
