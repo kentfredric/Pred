@@ -13,6 +13,7 @@ toolkit_hardness = soft
 normal_form      = numify
 mantissa         = 6
 copyfiles        = LICENSE
+bumpversions     = 1
 
 [Prereqs]
 [Prereqs / TestRequires]

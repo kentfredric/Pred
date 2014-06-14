@@ -3,6 +3,8 @@ use warnings;
 
 package Pred::Types;
 
+our $VERSION = '0.001000';
+
 # ABSTRACT: Basic type predicate functions
 
 # AUTHORITY
