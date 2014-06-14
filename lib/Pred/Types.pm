@@ -3,6 +3,8 @@ use warnings;
 
 package Pred::Types;
 
+# ABSTRACT: Basic type predicate functions
+
 use List::Util qw(all);
 use Scalar::Util qw(blessed looks_like_number);
 use Exporter;
