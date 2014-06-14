@@ -5,6 +5,8 @@ package Pred::Types;
 
 # ABSTRACT: Basic type predicate functions
 
+# AUTHORITY
+
 use List::Util qw(all);
 use Scalar::Util qw(blessed looks_like_number);
 use Exporter;
