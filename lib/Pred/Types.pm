@@ -1,3 +1,6 @@
+use strict;
+use warnings;
+
 package Pred::Types;
 
 use List::Util qw(all);
