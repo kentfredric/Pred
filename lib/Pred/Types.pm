@@ -5,6 +5,8 @@ package Pred::Types;
 $Pred::Types::VERSION = '0.001000';
 # ABSTRACT: Basic type predicate functions
 
+our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
+
 use List::Util qw(all);
 use Scalar::Util qw(blessed looks_like_number);
 use Exporter;
