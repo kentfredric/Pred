@@ -2,7 +2,9 @@ use strict;
 use warnings;
 
 package Pred::Types;
-$Pred::Types::VERSION = '0.001000';
+
+our $VERSION = '0.001000';
+
 # ABSTRACT: Basic type predicate functions
 
 our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
